@@ -1,4 +1,6 @@
 const express = require("express");
+
+const cors = require("cors"); // Importa el módulo cors
 require("dotenv").config();
 
 const bodyParser = require("body-parser");
@@ -8,6 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 6000;
 
 app.use(bodyParser.json());
+app.use(cors());
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY_2,
