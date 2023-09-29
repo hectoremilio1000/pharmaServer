@@ -1,0 +1,17 @@
+{
+  "name": "serverchatapi",
+  "version": "1.0.0",
+  "description": "bot api chat gpt para pharmahogar",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "openai": "^4.8.0",
+    "spelling": "^2.0.2"
+  }
+}
